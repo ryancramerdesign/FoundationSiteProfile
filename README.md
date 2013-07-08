@@ -52,7 +52,7 @@ $config->appendTemplateFile = '_main.php';
 Desktop  
 <img src='https://raw.github.com/ryancramerdesign/FoundationSiteProfile/master/screenshot-desktop.jpg' />
 
-Mobile
+Mobile  
 <img src='https://raw.github.com/ryancramerdesign/FoundationSiteProfile/master/screenshot-mobile.jpg' />
 
 ------------

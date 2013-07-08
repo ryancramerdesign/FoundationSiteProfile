@@ -50,10 +50,10 @@ $config->appendTemplateFile = '_main.php';
 ## Screenshots
 
 Desktop  
-<img src='https://github.com/ryancramerdesign/FoundationSiteProfile/blob/master/screenshot-desktop.jpg' />
+<img src='https://raw.github.com/ryancramerdesign/FoundationSiteProfile/master/screenshot-desktop.jpg' />
 
 Mobile
-<img src='https://github.com/ryancramerdesign/FoundationSiteProfile/blob/master/screenshot-mobile.jpg' />
+<img src='https://raw.github.com/ryancramerdesign/FoundationSiteProfile/master/screenshot-mobile.jpg' />
 
 ------------
 

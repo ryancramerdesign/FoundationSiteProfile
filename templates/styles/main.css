@@ -1,0 +1,87 @@
+#logo {
+	/* tweak the logo for better alignment in the top-bar */
+	position: relative;
+	top: -3px; 
+}
+
+.breadcrumbs {
+	/* change default appearance of Foundation breadcrumbs */
+	padding: 0;
+	background: none; 
+	border: none; 
+}
+	#bodycopy .breadcrumbs {
+		/* make the breadcrumbs appear in the spot between masthead and bodycopy */
+		margin: 0 0 -1em 0;
+		position: relative;
+		top: -1.75em; 
+		left: -6px; 
+	}
+	#bodycopy .breadcrumbs li {
+		background: #fff; 
+	}
+	#bodycopy .breadcrumbs li:first-child {
+		padding-left: 8px; 
+	}
+	#bodycopy .breadcrumbs li:last-child {
+		padding-right: 8px; 
+	}
+
+#search-form {
+	/* this better aligns the search form with the headline */
+	margin: 1em 0 0 0; 
+}
+
+#masthead h1 {
+	/* no need for margin here since h1 is the only thing in masthead */
+	margin: 0;
+}
+
+#bodycopy .side-nav li {
+	/* when side-nav in bodycopy, make it a little more prominent than Foundation default */
+	font-size: 1em; 
+}
+	#bodycopy .side-nav a {
+		font-weight: bold; 
+	}
+	#bodycopy .side-nav ul ul a {
+		font-weight: normal;
+	}
+
+#sidebar h3 + ul.side-nav {
+	/* get the nav headline closer to the nav */
+	margin-top: -1em;
+}
+
+body.template-sitemap .breadcrumbs {
+	/* breadcrumbs are redundant on a sitemap page */
+	display: none; 
+}
+
+ul.side-nav ul {
+	/* nested sub-navigation (tree=true) */
+	margin-top: 0.5em; 
+	margin-left: 2em;
+}
+
+
+/*
+ * TinyMCE alignment styles, for images placed in bodycopy
+ *
+ */
+
+.align_left {
+	float: left;
+	margin: 0 1em 0.5em 0; 
+}
+
+.align_right {
+	float: right;
+	margin: 0 0 1em 1em; 
+}
+
+.align-center {
+	display: block;
+	margin: 0 auto;
+}
+

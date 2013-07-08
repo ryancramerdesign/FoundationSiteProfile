@@ -1,6 +1,24 @@
 # ProcessWire Site Profile Using Zurb Foundation 4
 
-This is a drop-in replacement for the default ProcessWire site profile. 
+- This is a drop-in replacement for the default ProcessWire site profile. 
+
+- It is mobile-first and fully responsive, capturing all the benefits of 
+  Zurb Foundation 4.
+
+- Ready to be expanded upon with built-in support for deeper levels
+  of navigation nesting in the sidebar.
+
+- Pagination ready with Foundation-specific pagination output, when/if 
+  you want it. 
+
+- Improved search engine, relative to the basic profile. 
+
+- Library of Foundation-specific markup generation functions included,
+  primary for generation of navigation (in _nav.php). 
+
+- Uses ProcessWire 2.3+ prepend/append template file settings making 
+  it easy to work with. 
+
 
 ## To Install
 
@@ -27,6 +45,15 @@ Start with a copy of ProcessWire 2.3 or newer, and its default site profile.
 $config->prependTemplateFile = '_init.php';
 $config->appendTemplateFile = '_main.php';
 ```
+
+
+## Screenshots
+
+Desktop  
+<img src='https://github.com/ryancramerdesign/FoundationSiteProfile/blob/master/screenshot-desktop.jpg' />
+
+Mobile
+<img src='https://github.com/ryancramerdesign/FoundationSiteProfile/blob/master/screenshot-mobile.jpg' />
 
 ------------
 

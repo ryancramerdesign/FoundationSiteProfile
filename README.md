@@ -2,6 +2,8 @@
 
 - This is a drop-in replacement for the default ProcessWire site profile. 
 
+- See a demo at: http://processwire.com/foundation/ 
+
 - It is mobile-first and fully responsive, capturing all the benefits of 
   Zurb Foundation 4.
 
@@ -54,6 +56,8 @@ Desktop
 
 Mobile  
 <img src='https://raw.github.com/ryancramerdesign/FoundationSiteProfile/master/screenshot-mobile.jpg' />
+
+Or see the demo at: http://processwire.com/foundation/ 
 
 ------------
 

@@ -20,12 +20,22 @@ $body = $page->body;
 $side = $page->sidebar;
 
 /**
- * Personal preference: Foundation's default output looks better if
- * the <h2> tags are given the 'subheader' class, so we just do that
- * automatically here. 
+ * Add custom classes to some elements inserted from the rich text editor
+ * so that we can identify and style them separately from others.
+ * 
+ * In our case, we want to add a 'subheader' class to <h2> tags, and we want 
+ * to add an 'in' class to <ul> and <ol> elements so that we can style them 
+ * separately from other <ul> or <ol> tags that Foundation might use for 
+ * navigation and such. This is all optional of course. 
  *
  */
-$body = str_replace('<h2>', '<h2 class="subheader">', $body); 
+$body = str_replace(
+	// find these:
+	array('<h2>', '<ul>', '<ol>'),
+	// and replace with these:
+	array('<h2 class="subheader">', '<ul class="in">', '<ol class="in">'),
+	// in the $body text
+	$body); 
 
 /*
  * Whether to include the _main.php markup file? For example, your template 

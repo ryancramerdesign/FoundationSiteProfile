@@ -32,8 +32,8 @@ if(!$useMain) return;
 
 	<?php if($page->summary) echo "<meta name='description' content='$page->summary' />"; ?>
 
-	<link rel="stylesheet" href="<?=$config->urls->templates?>foundation/css/foundation.css" />
-	<link rel="stylesheet" href="<?=$config->urls->templates?>styles/main.css" />
+	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>foundation/css/foundation.css" />
+	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/main.css" />
 
 	<script src="<?php echo $config->urls->templates; ?>foundation/js/vendor/custom.modernizr.js"></script>
 </head>
@@ -157,7 +157,8 @@ if(!$useMain) return;
 	</footer>
 
 	<script>document.write('<script src=<?php echo $config->urls->templates; ?>foundation/js/vendor/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>')</script>
-	<script src="<?=$config->urls->templates?>foundation/js/foundation.min.js"></script>
+	<script src="<?php echo $config->urls->templates; ?>foundation/js/foundation.min.js"></script>
+	<script src="<?php echo $config->urls->templates; ?>scripts/main.js"></script>
 	<script>$(document).foundation();</script>
 </body>
 </html>

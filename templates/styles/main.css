@@ -4,6 +4,15 @@
 	top: -3px; 
 }
 
+#bodycopy ul.in,
+#bodycopy ol.in,
+#sidebar ul,
+#sidebar ol {
+	/* Foundation doesn't indent lists at all, so we fix that here... */
+	margin-left: 1.25em; 
+}
+
+
 .breadcrumbs {
 	/* change default appearance of Foundation breadcrumbs */
 	padding: 0;
@@ -27,26 +36,32 @@
 		padding-right: 8px; 
 	}
 
+#bodycopy ul.side-nav,
+#sidebar ul.side-nav {
+	/* we don't want navigation lists indented */
+	margin-left: 0;
+}
+	#bodycopy .side-nav li {
+		/* when side-nav in bodycopy, make it a little more prominent than Foundation default */
+		font-size: 1em; 
+	}
+		#bodycopy .side-nav a {
+			font-weight: bold; 
+		}
+		#bodycopy .side-nav ul ul a {
+			font-weight: normal;
+		}
+
+
 #search-form {
 	/* this better aligns the search form with the headline */
-	margin: 1em 0 0 0; 
+	margin: 0.75em 0 0 0; 
 }
 
 #masthead h1 {
 	/* no need for margin here since h1 is the only thing in masthead */
 	margin: 0;
 }
-
-#bodycopy .side-nav li {
-	/* when side-nav in bodycopy, make it a little more prominent than Foundation default */
-	font-size: 1em; 
-}
-	#bodycopy .side-nav a {
-		font-weight: bold; 
-	}
-	#bodycopy .side-nav ul ul a {
-		font-weight: normal;
-	}
 
 #sidebar h3 + ul.side-nav {
 	/* get the nav headline closer to the nav */
@@ -65,23 +80,48 @@ ul.side-nav ul {
 }
 
 
+
 /*
  * TinyMCE alignment styles, for images placed in bodycopy
  *
  */
-
-.align_left {
-	float: left;
-	margin: 0 1em 0.5em 0; 
-}
-
+.align_left,
 .align_right {
-	float: right;
-	margin: 0 0 1em 1em; 
+	display: block;
+	margin: 1em 0;
 }
 
 .align-center {
 	display: block;
-	margin: 0 auto;
+	margin: 1em auto;
 }
+
+@media only screen and (min-width: 500px) {
+
+	/* 
+ 	 * Alignment classes active only when screen is big enough to make them practical.
+ 	 * In our case we've set 500px as our cutoff under which images no longer align,
+ 	 * but you may need to tweak that specific to your case.
+ 	 *
+ 	 */
+
+	.align_left {
+		float: left;
+		margin: 0 1em 0.5em 0; 
+		position: relative;
+		top: 5px; 
+	}
+
+	.align_right {
+		float: right;
+		margin: 0 0 1em 1em; 
+		position: relative;
+		top: 5px; 
+	}
+}
+
+.image_caption small {
+	color: #777; 	
+}
+
 

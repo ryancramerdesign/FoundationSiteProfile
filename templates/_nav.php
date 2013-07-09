@@ -172,7 +172,7 @@ function renderTopNav(PageArray $items, array $options = array(), $level = 0) {
 	$defaults = array(
 		'tree' => 2, // number of levels it should recurse into the tree
 		'dividers' => true,
-		'repeat' => true, // whether to repeat items with children as first item in their children nav
+		'repeat' => false, // whether to repeat items with children as first item in their children nav
 		);
 
 	$options = array_merge($defaults, $options); 
@@ -216,7 +216,8 @@ function renderOrbit($images, $width = 800, $height = 500) {
 	foreach($images as $image) {
 		$image = $image->size($width, $height);
 		$out .= "<li><img src='$image->url' />"; 
-		if($image->description) $out .= "<div class='orbit-caption'>$image->description</div></li>";
+		if($image->description) $out .= "<div class='orbit-caption'>$image->description</div>";
+		$out .= "</li>";
 	}
 
 	$out .= "</ul>";

@@ -52,6 +52,12 @@
 			font-weight: normal;
 		}
 
+ul.side-nav ul {
+	/* nested sub-navigation (tree=true) */
+	margin-top: 0.5em; 
+	margin-left: 2em;
+}
+
 
 #search-form {
 	/* this better aligns the search form with the headline */
@@ -68,17 +74,12 @@
 	margin-top: -1em;
 }
 
+
+
 body.template-sitemap .breadcrumbs {
 	/* breadcrumbs are redundant on a sitemap page */
 	display: none; 
 }
-
-ul.side-nav ul {
-	/* nested sub-navigation (tree=true) */
-	margin-top: 0.5em; 
-	margin-left: 2em;
-}
-
 
 
 /*
@@ -121,7 +122,8 @@ ul.side-nav ul {
 }
 
 .image_caption small {
-	color: #777; 	
+	display: block;
+	color: #666; 	
 }
 
 

@@ -124,7 +124,7 @@ if(!$useMain) return;
 			if(count($homepage->images)) {
 				$image = $homepage->images->getRandom();
 				$thumb = $image->size(606, 372); 
-				echo "<p><img src='{$thumb->url}' alt='{$thumb->description}' /></p>";
+				echo "<p><img src='$thumb->url' alt='$thumb->description' /></p>";
 			}
 
 			// display sidebar navigation, except on homepage

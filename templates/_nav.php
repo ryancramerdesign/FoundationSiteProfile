@@ -172,7 +172,7 @@ function renderTopNav(PageArray $items, array $options = array(), $level = 0) {
 	$defaults = array(
 		'tree' => 2, // number of levels it should recurse into the tree
 		'dividers' => true,
-		'repeat' => false, // whether to repeat items with children as first item in their children nav
+		'repeat' => true, // whether to repeat items with children as first item in their children nav
 		);
 
 	$options = array_merge($defaults, $options); 

@@ -1,11 +1,6 @@
-# ProcessWire Site Profile Using Zurb Foundation 4
+# ProcessWire Site Profile Using Zurb Foundation
 
-- This is a drop-in replacement for the default ProcessWire site profile. 
-
-- See a demo at: http://processwire.com/foundation/ 
-
-- It is mobile-first and fully responsive, capturing all the benefits of 
-  Zurb Foundation 4.
+- Requires ProcessWire 2.5 or newer. 
 
 - Ready to be expanded upon with built-in support for deeper levels
   of navigation nesting in the sidebar.
@@ -16,38 +11,24 @@
 - Improved search engine, relative to the basic profile. 
 
 - Library of Foundation-specific markup generation functions included,
-  primary for generation of navigation (in _nav.php). 
-
-- Uses ProcessWire 2.3+ prepend/append template file settings making 
-  it easy to work with. 
+  primary for generation of navigation (in _nav.php).   
+  
+- Currently uses Foundation 4, but you can upgrade it to the latest 
+  version of Foundation by replacing the /site/templates/foundation/
+  directory. 
 
 
 ## To Install
 
-Start with a copy of ProcessWire 2.3 or newer, and its default site profile. 
+Grab a copy of the [latest ProcessWire](http://processwire.com/download/).
+Copy or upload the /site-foundation/ directory and everything in it to the root of
+your ProcessWire files. This is the same directory that ProcessWire's index.php
+and /site-default/ directories live. So you'll have a /site-foundation/ alongside
+ProcessWire's /site-default/ and any other profiles it comes with.
 
-### If starting with an uninstalled copy of ProcessWire
-
-1. Replace the `/site-default/templates/` directory with the `templates` 
-   directory from this profile. 
-
-2. Replace the `/site-default/config.php` file with the `config.php` file 
-   from this profile.
-
-3. Run the ProcessWire installer.
-
-### If starting with an already-installed copy of ProcessWire
-
-1. Replace the `/site/templates/` directory with the `templates` 
-   directory from this profile. 
-
-2. Add the following two lines to your `/site/config.php` file: 
-
-```
-$config->prependTemplateFile = '_init.php';
-$config->appendTemplateFile = '_main.php';
-```
-
+Load the URL to your ProcessWire installation in your browser to initiate the installer.
+Select the "Blog Profile" from the dropdown when prompted to do so. The installer will 
+take care of the rest.
 
 ## Screenshots
 
@@ -57,10 +38,9 @@ Desktop
 Mobile  
 <img src='https://raw.github.com/ryancramerdesign/FoundationSiteProfile/master/screenshot-mobile.jpg' />
 
-Or see the demo at: http://processwire.com/foundation/ 
 
 ------------
 
 Site profile developed by Ryan Cramer
-http://processwire.com 
+https://processwire.com 
 
